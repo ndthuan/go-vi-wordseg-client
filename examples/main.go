@@ -1,24 +1,3 @@
-# go-vi-wordseg-client
-Go client library for the Vietnamese word segmenter service https://github.com/ndthuan/vi-word-segmenter.
-
-Supported versions: Go 1.12 and newer.
-
-# Testing Prerequisites
-* Docker on local machine and docker-compose
-* GNU make
-
-## How to run tests
-```shell script
-make test
-```
-
-## How to run examples
-```shell script
-make examples
-```
-
-# Usage
-```go
 package main
 
 import (
@@ -43,5 +22,3 @@ func main() {
 		}
 	}
 }
-
-```

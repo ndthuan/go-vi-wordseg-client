@@ -1,0 +1,14 @@
+version: '3.7'
+
+services:
+  tests:
+    build:
+      context: ../..
+      dockerfile: build/ci/Dockerfile
+    volumes:
+      - "../..:/go/src/github.com/ndthuan/go-vi-wordseg-client"
+    working_dir: /go/src/github.com/ndthuan/go-vi-wordseg-client
+    depends_on:
+      - segmenterv1
+  segmenterv1:
+    image: ndthuan/vi-word-segmenter:0.0.1
