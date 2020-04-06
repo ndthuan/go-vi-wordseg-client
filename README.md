@@ -43,5 +43,14 @@ func main() {
 		}
 	}
 }
+```
 
+Should output:
+
+```text
+Word-segmented text with tagging:
+form=Việt_Nam pos=Np ner=B-PER dep=sub
+form=tổng_tấn_công pos=V ner=O dep=root
+form=COVID pos=Ny ner=O dep=dob
+form=! pos=CH ner=O dep=punct
 ```
